@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+｛
+FILE *fptr1, *fptr2;
+char ch;
+fptrl=fopen( "welcome. txt","r");
+fptr2=fopen( "output. txt", "w");
+if （（fptr1！=NULL） &&（fptr2！=NULL））
+｛
+while （（ch=getc（ fptrl））！= EOF）
+Putc（ch, fptr2）；
+fclose（fptrl）；
+fclose（fptx2）；
+printf（"檔案拷貝完成！！\n"）；
+｝
+else
+printf（"檔案開啟失敗！！\n"）；
+sys tem（"pause"）；
+returnO；
+｝
